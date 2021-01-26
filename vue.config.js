@@ -7,8 +7,8 @@ module.exports = {
     lintOnSave: false, // eslint-loader 是否在保存的时候检查
     // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
     // webpack配置
-    chainWebpack: (config) => {
-    },
+    // chainWebpack: (config) => {
+    // },
     configureWebpack: (config) => {
         if (process.env.NODE_ENV === 'production') {
             // 为生产环境修改配置...
@@ -36,7 +36,7 @@ module.exports = {
         sourceMap: false, // 开启 CSS source maps?
         loaderOptions: {
             css: {}, // 这里的选项会传递给 css-loader
-            postcss: {} // 这里的选项会传递给 postcss-loader
+            // postcss: {} // 这里的选项会传递给 postcss-loader
         }, // css预设器配置项 详见https://cli.vuejs.org/zh/config/#css-loaderoptions
         modules: false // 启用 CSS modules for all css / pre-processor files.
     },
