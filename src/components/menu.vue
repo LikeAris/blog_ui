@@ -3,8 +3,8 @@
         <el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
             <el-submenu index="1">
                 <template slot="title">
-                    <i class="el-icon-location"></i>
-                    <span slot="title">剑少晨的首页</span>
+                    <i class="el-icon-menu"></i>
+                    <span slot="title">剑少晨的笔记</span>
                 </template>
                 <el-menu-item-group>
                     <span slot="title">分组一</span>
@@ -20,16 +20,16 @@
                 </el-submenu>
             </el-submenu>
             <el-menu-item index="2" @click="toPhoto()">
-                <i class="el-icon-menu"></i>
+                <i class="el-icon-picture"></i>
                 <span slot="title">剑少晨的照片</span>
             </el-menu-item>
-            <el-menu-item index="3" disabled>
-                <i class="el-icon-document"></i>
-                <span slot="title">剑少晨的首页</span>
+            <el-menu-item index="3" >
+                <i class="el-icon-aim"></i>
+                <span slot="title">剑少晨的游戏</span>
             </el-menu-item>
             <el-menu-item index="4">
-                <i class="el-icon-setting"></i>
-                <span slot="title">剑少晨的首页</span>
+                <i class="el-icon-user"></i>
+                <span slot="title">剑少晨的自我介绍</span>
             </el-menu-item>
         </el-menu>
     </div>

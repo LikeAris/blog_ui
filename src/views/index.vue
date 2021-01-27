@@ -2,19 +2,19 @@
 <template>
     <div>
         <Menu class="menu"></Menu>
-        <Carousel v-show=carouselVisible class="carousel"></Carousel>
+        <Photo v-show=photoVisible class="carousel"></Photo>
     </div>
 </template>
 
 <script>
     import Menu from "../components/menu.vue";
-    import Carousel from "../components/carousel.vue";
+    import Photo from "./photo.vue";
     // 导出模块
     export default {
         name: 'Index',
         data() {
             return {
-                carouselVisible:false
+                photoVisible:false
             }
         },
         methods: {
@@ -25,21 +25,21 @@
         },
         watch: {
             // 每当计算属性中的isShowCarousel的返回值改变时，就会触发此监听器
-            isShowCarousel(val) {
+            isShowPhoto(val) {
                 console.log(val, 'val');
                 if (val){
-                    this.carouselVisible = val
+                    this.photoVisible = val
                 }
             }
         },
         computed: {
-            isShowCarousel() {
+            isShowPhoto() {
                 return this.$store.state.carouselVisible
             }
         },
         components: {
             Menu,
-            Carousel
+            Photo
         }
     }
 </script>
@@ -55,7 +55,7 @@
     }
 
     .menu {
-        width: 100%;
+        width: 20%;
         position: fixed; /*元素相对于页面固定*/
         overflow: auto;
         z-index: 999;   /*显示在最上方*/
