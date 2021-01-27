@@ -1,35 +1,45 @@
 <!--主页面-->
 <template>
     <div>
-        <div class="top">
-            <Menu></Menu>
-        </div>
-        <div class="left">
-
-        </div>
-        <div class="mid">
-
-        </div>
-        <div class="right">
-
-        </div>
+        <Menu class="menu"></Menu>
+        <Carousel v-show=carouselVisible class="carousel"></Carousel>
     </div>
 </template>
 
 <script>
     import Menu from "../components/menu.vue";
+    import Carousel from "../components/carousel.vue";
     // 导出模块
     export default {
-        name:'Index',
+        name: 'Index',
         data() {
             return {
-
-            };
+                carouselVisible:false
+            }
         },
         methods: {
+
         },
-        components:{
-            Menu
+        created() {
+
+        },
+        watch: {
+            // 每当计算属性中的isShowCarousel的返回值改变时，就会触发此监听器
+            isShowCarousel(val) {
+                console.log(val, 'val');
+                if (val){
+                    this.carouselVisible = val
+                }
+            }
+        },
+        computed: {
+            isShowCarousel() {
+                return this.$store.state.carouselVisible
+            }
+        },
+        components: {
+            Menu,
+            Carousel
         }
     }
 </script>
@@ -39,29 +49,19 @@
      * 导入css样式组件
      * @import "../assets/css/components/index.css";
      */
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-    .top{
+
+    .menu {
         width: 100%;
-        position: fixed;   /*元素相对于页面固定*/
+        position: fixed; /*元素相对于页面固定*/
         overflow: auto;
+        z-index: 999;   /*显示在最上方*/
     }
-    .left,.mid,.right{
-        float: left;
-        height: 1200px;
+    .carousel{
+        display: block;
     }
-    .left{
-        width: 25%;
-        background-color: rgba(35, 14, 46, 0.57);
-    }
-    .mid{
-        width: 50%;
-        background-color: aliceblue;
-    }
-    .right{
-        width: 25%;
-        background-color: aquamarine;
-    }
+
 </style>
