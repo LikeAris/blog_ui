@@ -5,6 +5,9 @@ import './plugins/element.js';
 import router from './router/router';
 // 引入状态管理
 import store from './vuex/store';
+// 粒子特效依赖
+import VueParticles from 'vue-particles';
+Vue.use(VueParticles);
 
 Vue.config.productionTip = false;
 

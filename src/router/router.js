@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '../views/index.vue';
 import Photo from '../views/photo.vue';
+import Blog from '../views/blog.vue'
 
 Vue.use(Router);
 
@@ -12,6 +13,11 @@ const router = new Router({
             name:'index',
             path:'/',
             component:Index,
+        },
+        {
+            name:'blog',
+            path:'/blog',
+            component:Blog,
         },
         {
             name:'photo',
