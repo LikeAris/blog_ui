@@ -2,8 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '../views/index.vue';
 import Photo from '../views/photo.vue';
-import Blog from '../views/blog.vue';
-import Test from '../views/test.vue';
+import Blog from '../views/blog.vue'
 
 Vue.use(Router);
 
@@ -24,11 +23,6 @@ const router = new Router({
             name:'photo',
             path:'/photo',
             component:Photo,
-        },
-        {
-            name:'test',
-            path:'/test',
-            component:Test,
         },
     ]
 })

@@ -1,26 +1,34 @@
-<!--博客-->
-
 <template>
     <div>
-        <BlogIndex class="blog_index"></BlogIndex>
+        <div style="margin-top: 15px;">
+            <el-input placeholder="请输入内容" v-model="input3" class="input-with-select">
+                <el-select v-model="select" slot="prepend" placeholder="请选择">
+                    <el-option label="餐厅名" value="1"></el-option>
+                    <el-option label="订单号" value="2"></el-option>
+                    <el-option label="用户电话" value="3"></el-option>
+                </el-select>
+                <el-button slot="append" icon="el-icon-search"></el-button>
+            </el-input>
+        </div>
     </div>
 </template>
 
 <script>
     // 导入组件
-    import BlogIndex from '../components/blog_index.vue';
     // 导出模块
     export default {
         // 模块名字
-        name: "Blog",
+        name: "BlogTop",
         // 模块数据
         data() {
             //数据
-            return {};
+            return {
+                input3: '',
+                select: ''
+            };
         },
         // 注册组件
         components: {
-            BlogIndex
         },
         // 监听指定值，只有指定值变化，才会触发
         watch: {},
@@ -47,15 +55,16 @@
         destroyed() {}
     };
 </script>
-
+// scoped 样式只在本组件使用
 <style scoped>
-    *{
-        margin: 0;
-        padding: 0;
-        background-color: skyblue;
+    /**
+     * 导入css样式组件
+     * @import "../assets/css/components/index.css";
+     */
+    .el-select .el-input {
+        width: 130px;
     }
-    .blog_index{
-        width: 100%;
-        margin: auto;
+    .input-with-select .el-input-group__prepend {
+        background-color: #fff;
     }
 </style>

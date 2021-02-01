@@ -1,18 +1,16 @@
+/**
+* 组件模版
+**/ 
+
 <template>
   <div>
-    <div style="margin-top: 15px">
-      <el-input
-        placeholder="请输入内容"
-        v-model="input3"
-        class="input-with-select"
-      >
-        <el-select v-model="select" slot="prepend" placeholder="请选择">
-          <el-option label="文章" value="1"></el-option>
-          <el-option label="日记" value="2"></el-option>
-        </el-select>
-        <el-button slot="append" icon="el-icon-search"></el-button>
-      </el-input>
-    </div>
+    <el-card shadow="hover" :body-style="{ padding: '0px' }">
+      <img
+        src="../assets/image/wallhaven-1k8x11.png"
+        class="image"
+      />
+      文章标题
+    </el-card>
   </div>
 </template>
 
@@ -21,14 +19,11 @@
 // 导出模块
 export default {
   // 模块名字
-  name: "BlogTop",
+  name: "Test",
   // 模块数据
   data() {
     //数据
-    return {
-      input3: "",
-      select: "",
-    };
+    return {};
   },
   // 注册组件
   components: {},
@@ -60,20 +55,16 @@ export default {
 // scoped 样式只在本组件使用
 <style scoped>
 /**
-     * 导入css样式组件
-     * @import "../assets/css/components/index.css";
-     */
-.el-select .el-input {
-  width: 50px;
-}
-.el-input-group {
-  line-height: normal;
-  display: inline-table;
-  width: 35%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-.input-with-select .el-input-group__prepend {
-  background-color: #fff;
-}
+ * 导入css样式组件
+ * @import "../assets/css/components/index.css";
+ */
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ .image{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+ }
 </style>

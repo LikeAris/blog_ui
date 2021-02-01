@@ -7,8 +7,9 @@
         class="input-with-select"
       >
         <el-select v-model="select" slot="prepend" placeholder="请选择">
-          <el-option label="文章" value="1"></el-option>
-          <el-option label="日记" value="2"></el-option>
+          <el-option label="餐厅名" value="1"></el-option>
+          <el-option label="订单号" value="2"></el-option>
+          <el-option label="用户电话" value="3"></el-option>
         </el-select>
         <el-button slot="append" icon="el-icon-search"></el-button>
       </el-input>
@@ -69,7 +70,7 @@ export default {
 .el-input-group {
   line-height: normal;
   display: inline-table;
-  width: 35%;
+  width: 50%;
   border-collapse: separate;
   border-spacing: 0;
 }

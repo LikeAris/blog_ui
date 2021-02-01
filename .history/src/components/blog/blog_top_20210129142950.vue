@@ -69,7 +69,7 @@ export default {
 .el-input-group {
   line-height: normal;
   display: inline-table;
-  width: 35%;
+  width: 50%;
   border-collapse: separate;
   border-spacing: 0;
 }
