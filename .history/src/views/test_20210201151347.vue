@@ -98,18 +98,18 @@ export default {
 .article_msg:hover .image {
   filter: blur(5px);
 }
-.title {
+.article_msg > .title {
   position: absolute;
   color: aliceblue;
   top: 130px;
   left: 0;
-  margin-left: 10%;
+}
+.title {
   width: 80%;
+  margin: auto;
   text-align: center;
 }
-.abstract{
-  position:absolute;
-  color: aliceblue;
-}
+.article_msg > .abstract{
 
+}
 </style>

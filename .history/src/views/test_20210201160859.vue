@@ -84,11 +84,6 @@ export default {
   position: relative;
   transition: all 0.3s;
 }
-/* 图片和标题整体1.1倍 */
-.article_msg:hover {
-  /* 放大1.1倍 */
-  transform: scale(1.1);
-}
 .image {
   width: 100%;
   height: 100%;
@@ -96,20 +91,29 @@ export default {
 }
 /* 图片加模糊 */
 .article_msg:hover .image {
+  transform: scale(1.1);
   filter: blur(5px);
 }
-.title {
+.article_msg > .title {
   position: absolute;
   color: aliceblue;
   top: 130px;
   left: 0;
+}
+.title {
   margin-left: 10%;
   width: 80%;
   text-align: center;
 }
-.abstract{
-  position:absolute;
-  color: aliceblue;
+/* 图片和标题整体1.1倍 */
+.article_msg:hover {
+  /* 放大1.1倍 */
+  transform: scale(1.1);
 }
+.article_msg > .abstract{
 
+}
+.article_msg:hover .title{
+  transform: scale(1.1);
+}
 </style>

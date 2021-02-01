@@ -5,21 +5,9 @@
 <template>
   <div>
     <el-card shadow="hover" :body-style="{ padding: '0px' }">
-      <!-- 背景图+标题 -->
-      <div class="article_msg">
-        <img src="../assets/image/wallhaven-g7j8mq.jpg" class="image" />
-        <div class="title">
-          <h3>测试标题测试标题长度</h3>
-        </div>
-        <div class="abstract">
-          <p>这是一段超长的摘要少时诵诗书所所所所所所所所所所多多多多付过过过过撒多付所发奥多撒所大色奥多撒所...</p>
-        </div>
-        <div class="info">
-          <span>2020-10-13</span>
-          <span><p>5</p>人阅读</span>
-          <span><p>1</p>人评论</span>
-          <span><p>5</p>人点赞</span>
-        </div>
+      <div class="img_title">
+        <img src="../assets/image/wallhaven-1k8x11.png" class="image" />
+        <h3>测试标题测试标题长度上大大东方</h3>
       </div>
     </el-card>
   </div>
@@ -74,42 +62,29 @@ export default {
   padding: 0;
 }
 .el-card {
-  width: 100%;
-  height: 300px;
+  width: 40%;
   margin: auto;
   overflow: hidden;
 }
 /* transition 别放hover里，放到img里，这样移入移出一样缓慢，不然只对hover移上去有缓慢效果 */
-.article_msg {
+.img_title{
   position: relative;
   transition: all 0.3s;
 }
-/* 图片和标题整体1.1倍 */
-.article_msg:hover {
-  /* 放大1.1倍 */
-  transform: scale(1.1);
-}
-.image {
+.image{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* 图片加模糊 */
-.article_msg:hover .image {
+.img_title:hover {
+  /* 放大1.2倍 */
+  transform: scale(1.2);
   filter: blur(5px);
 }
-.title {
+.img_title > h3 {
   position: absolute;
   color: aliceblue;
-  top: 130px;
+  top: 0;
   left: 0;
-  margin-left: 10%;
-  width: 80%;
-  text-align: center;
 }
-.abstract{
-  position:absolute;
-  color: aliceblue;
-}
-
 </style>

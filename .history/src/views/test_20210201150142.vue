@@ -11,15 +11,6 @@
         <div class="title">
           <h3>测试标题测试标题长度</h3>
         </div>
-        <div class="abstract">
-          <p>这是一段超长的摘要少时诵诗书所所所所所所所所所所多多多多付过过过过撒多付所发奥多撒所大色奥多撒所...</p>
-        </div>
-        <div class="info">
-          <span>2020-10-13</span>
-          <span><p>5</p>人阅读</span>
-          <span><p>1</p>人评论</span>
-          <span><p>5</p>人点赞</span>
-        </div>
       </div>
     </el-card>
   </div>
@@ -98,18 +89,14 @@ export default {
 .article_msg:hover .image {
   filter: blur(5px);
 }
-.title {
+.article_msg > .title {
   position: absolute;
   color: aliceblue;
-  top: 130px;
+  top:130px;
   left: 0;
-  margin-left: 10%;
-  width: 80%;
+}
+.title{
+  width: 100%;
   text-align: center;
 }
-.abstract{
-  position:absolute;
-  color: aliceblue;
-}
-
 </style>
