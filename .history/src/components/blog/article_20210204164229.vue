@@ -131,7 +131,7 @@ export default {
 .info{
   position: absolute;
   color: aliceblue;
-  top: 260px;
+  top: 280px;
   left: 5%;
   opacity: 0;
   transition: all .5s;

@@ -78,6 +78,9 @@ export default {
   margin: auto;
   overflow: hidden;
 }
+.el-card__body {
+    height: 300px;
+}
 /* transition 别放hover里，放到img里，这样移入移出一样缓慢，不然只对hover移上去有缓慢效果 */
 .article_msg {
   position: relative;
@@ -131,7 +134,7 @@ export default {
 .info{
   position: absolute;
   color: aliceblue;
-  top: 260px;
+  top: 280px;
   left: 5%;
   opacity: 0;
   transition: all .5s;

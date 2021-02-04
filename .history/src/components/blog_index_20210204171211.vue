@@ -4,8 +4,7 @@
     <BlogTop class="blog_top"></BlogTop>
     <div class="blog_mid">
       <BlogMenu></BlogMenu>
-      <Article class="article"></Article>
-      <Article class="article"></Article>
+      <Article></Article>
     </div>
   </div>
 </template>
@@ -43,7 +42,5 @@ export default {
   width: 50%;
   margin: auto;
 }
-.article{
-  margin-top: 1rem;
-}
+
 </style>

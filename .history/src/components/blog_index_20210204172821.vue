@@ -5,7 +5,6 @@
     <div class="blog_mid">
       <BlogMenu></BlogMenu>
       <Article class="article"></Article>
-      <Article class="article"></Article>
     </div>
   </div>
 </template>

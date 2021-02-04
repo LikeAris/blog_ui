@@ -89,9 +89,8 @@ export default {
   transform: scale(1.1);
 }
 .image {
-  max-width: 100%;
-  max-height: 100%;
-  
+  width: 100%;
+  height: 100%;
 }
 /* 图片加模糊 */
 .article_msg:hover .image {
@@ -131,7 +130,7 @@ export default {
 .info{
   position: absolute;
   color: aliceblue;
-  top: 260px;
+  top: 280px;
   left: 5%;
   opacity: 0;
   transition: all .5s;

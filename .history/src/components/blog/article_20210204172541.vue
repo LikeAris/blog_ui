@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <el-card shadow="hover" :body-style="{ padding: '0px' }">
+    <el-card shadow="hover" :body-style="{ padding: '0px',border:solid, }">
       <!-- 背景图+标题 -->
       <div class="article_msg">
         <img src="../../assets/image/wallhaven-g7j8mq.jpg" class="image" />

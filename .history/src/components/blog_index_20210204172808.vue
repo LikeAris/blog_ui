@@ -5,7 +5,6 @@
     <div class="blog_mid">
       <BlogMenu></BlogMenu>
       <Article class="article"></Article>
-      <Article class="article"></Article>
     </div>
   </div>
 </template>
@@ -44,6 +43,6 @@ export default {
   margin: auto;
 }
 .article{
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 </style>
