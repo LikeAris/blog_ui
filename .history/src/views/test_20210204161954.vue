@@ -131,13 +131,11 @@ export default {
 .info{
   position: absolute;
   color: aliceblue;
-  top: 280px;
-  left: 5%;
-  opacity: 0;
+  top: 250px;
+  left: 0;
+  opacity: 100;
   transition: all .5s;
   width: 90%;
-  border-top: white solid;
-  padding-top: 5px;
 }
 .article_msg:hover .info{
   transform: scale(0.9) !important;
@@ -145,7 +143,7 @@ export default {
 }
 .info>span{
   float: left;
-  margin-right: 1%;
+  margin-right: 5%;
 }
 .info>span>p{
   float: left;

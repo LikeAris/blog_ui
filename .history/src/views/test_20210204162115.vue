@@ -132,12 +132,10 @@ export default {
   position: absolute;
   color: aliceblue;
   top: 280px;
-  left: 5%;
+  left: 1%;
   opacity: 0;
   transition: all .5s;
   width: 90%;
-  border-top: white solid;
-  padding-top: 5px;
 }
 .article_msg:hover .info{
   transform: scale(0.9) !important;

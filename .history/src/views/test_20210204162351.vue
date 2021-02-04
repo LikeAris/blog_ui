@@ -137,7 +137,6 @@ export default {
   transition: all .5s;
   width: 90%;
   border-top: white solid;
-  padding-top: 5px;
 }
 .article_msg:hover .info{
   transform: scale(0.9) !important;

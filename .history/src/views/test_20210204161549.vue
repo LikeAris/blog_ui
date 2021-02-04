@@ -16,9 +16,9 @@
         </div>
         <div class="info">
           <span>2020-10-13</span>
-          <span><p>5</p>人阅读 </span>
-          <span><p>1</p>人评论 </span>
-          <span><p>5</p>人点赞 </span>
+          <span><p>5</p>人阅读</span>
+          <span><p>1</p>人评论</span>
+          <span><p>5</p>人点赞</span>
         </div>
       </div>
     </el-card>
@@ -131,23 +131,14 @@ export default {
 .info{
   position: absolute;
   color: aliceblue;
-  top: 280px;
-  left: 5%;
-  opacity: 0;
+  top: 250px;
+  left: 0;
+  opacity: 100;
   transition: all .5s;
-  width: 90%;
-  border-top: white solid;
-  padding-top: 5px;
+  float: left;
 }
 .article_msg:hover .info{
   transform: scale(0.9) !important;
   opacity: 100;
-}
-.info>span{
-  float: left;
-  margin-right: 1%;
-}
-.info>span>p{
-  float: left;
 }
 </style>

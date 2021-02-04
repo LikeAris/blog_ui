@@ -15,7 +15,7 @@
           <p>这是一段超长的摘要，少时诵诗书啊啊所所所所所诵诗书所所所所所所所所所所多多多多付过过过过撒多付所发奥多撒所大色奥多撒所...</p>
         </div>
         <div class="info">
-          <span>2020-10-13</span>
+          <span>2020-10-13 </span>
           <span><p>5</p>人阅读 </span>
           <span><p>1</p>人评论 </span>
           <span><p>5</p>人点赞 </span>
@@ -131,13 +131,10 @@ export default {
 .info{
   position: absolute;
   color: aliceblue;
-  top: 280px;
-  left: 5%;
-  opacity: 0;
+  top: 250px;
+  left: 0;
+  opacity: 100;
   transition: all .5s;
-  width: 90%;
-  border-top: white solid;
-  padding-top: 5px;
 }
 .article_msg:hover .info{
   transform: scale(0.9) !important;
@@ -145,7 +142,6 @@ export default {
 }
 .info>span{
   float: left;
-  margin-right: 1%;
 }
 .info>span>p{
   float: left;
