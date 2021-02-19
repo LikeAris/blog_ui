@@ -53,6 +53,5 @@ export default {
 .foot {
     text-align: center;
     line-height: 3rem;
-    vertical-align: middle;
 }
 </style>

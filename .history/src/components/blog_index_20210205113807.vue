@@ -1,13 +1,12 @@
 <!--博客主页-->
 <template>
   <div>
-    <blog-top class="blog_top"></blog-top>
+    <BlogTop class="blog_top"></BlogTop>
     <div class="blog_mid">
-      <blog-menu></blog-menu>
+      <BlogMenu></BlogMenu>
       <Article class="article"></Article>
       <Article class="article"></Article>
     </div>
-    <blog-foot></blog-foot>
   </div>
 </template>
 
@@ -17,7 +16,6 @@ import BlogTop from "./blog/blog_top.vue";
 import BlogMenu from "./blog/blog_menu.vue";
 import Article from "./blog/article.vue";
 // import BlogRight from './blog/blog_right.vue';
-import BlogFoot from "./blog/blog_foot.vue";
 
 export default {
   name: "BlogIndex",
@@ -31,7 +29,6 @@ export default {
     BlogMenu,
     Article,
     // BlogRight
-    BlogFoot
   },
 };
 </script>

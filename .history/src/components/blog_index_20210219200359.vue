@@ -1,9 +1,9 @@
 <!--博客主页-->
 <template>
   <div>
-    <blog-top class="blog_top"></blog-top>
+    <BlogTop class="blog_top"></BlogTop>
     <div class="blog_mid">
-      <blog-menu></blog-menu>
+      <BlogMenu></BlogMenu>
       <Article class="article"></Article>
       <Article class="article"></Article>
     </div>

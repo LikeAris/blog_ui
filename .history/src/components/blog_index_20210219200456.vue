@@ -4,8 +4,8 @@
     <blog-top class="blog_top"></blog-top>
     <div class="blog_mid">
       <blog-menu></blog-menu>
-      <Article class="article"></Article>
-      <Article class="article"></Article>
+      <article class="article"></article>
+      <article class="article"></article>
     </div>
     <blog-foot></blog-foot>
   </div>
