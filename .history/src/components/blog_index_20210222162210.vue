@@ -4,7 +4,7 @@
     <blog-top class="blog_top"></blog-top>
     <el-row>
       <el-col span="6">
-        <Message class="message"></Message>
+        <Message></Message>
       </el-col>
       <el-col span="10" class="blog_mid">
         <blog-menu></blog-menu>
@@ -61,6 +61,6 @@ export default {
 }
 .message{
   width: 75%;
-  float: right;
+  border-radius: 10px;
 }
 </style>

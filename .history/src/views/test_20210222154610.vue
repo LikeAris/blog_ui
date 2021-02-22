@@ -53,10 +53,7 @@
           </el-col>
         </el-row>
         <el-row>
-          <el-button circle icon="zb-iconsteam"></el-button>
-          <el-button circle icon="zb-iconbilibili"></el-button>
-          <el-button circle icon="zb-icongithubcolor"></el-button>
-          <el-button circle icon="zb-iconqq"></el-button>
+          <el-button size="medium" round class="zb-iconsteam"></el-button>
         </el-row>
     </div>
   </div>

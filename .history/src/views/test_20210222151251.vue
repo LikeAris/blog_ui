@@ -34,30 +34,9 @@
       </div>
     </el-card>
     <div class="msg">
-        <el-row>
-          <el-avatar shape="circle" :size="100" fit="fill" :src="url"></el-avatar>
-          <p>{{username}}</p>
-        </el-row>
-        <el-row>
-          <el-col span="8">
-            <el-row>10100</el-row>
-            <el-row>文章</el-row>
-          </el-col>
-          <el-col span="8">
-            <el-row>10100</el-row>
-            <el-row>文章</el-row>
-          </el-col>
-          <el-col span="8">
-            <el-row>10100</el-row>
-            <el-row>文章</el-row>
-          </el-col>
-        </el-row>
-        <el-row>
-          <el-button circle icon="zb-iconsteam"></el-button>
-          <el-button circle icon="zb-iconbilibili"></el-button>
-          <el-button circle icon="zb-icongithubcolor"></el-button>
-          <el-button circle icon="zb-iconqq"></el-button>
-        </el-row>
+        <el-row> <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar></el-row>
+        <el-row></el-row>
+        <el-row></el-row>
     </div>
   </div>
 </template>
@@ -71,10 +50,7 @@ export default {
   // 模块数据
   data() {
     //数据
-    return {
-      username:'张三',
-       url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
-    };
+    return {};
   },
   // 注册组件
   components: {},

@@ -55,7 +55,7 @@
         <el-row>
           <el-button circle icon="zb-iconsteam"></el-button>
           <el-button circle icon="zb-iconbilibili"></el-button>
-          <el-button circle icon="zb-icongithubcolor"></el-button>
+          <el-button circle icon="zb-icongithub"></el-button>
           <el-button circle icon="zb-iconqq"></el-button>
         </el-row>
     </div>

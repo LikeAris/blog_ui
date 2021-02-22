@@ -61,6 +61,6 @@ export default {
 }
 .message{
   width: 75%;
-  float: right;
+  border-radius: 10px;
 }
 </style>

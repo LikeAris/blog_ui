@@ -2,19 +2,15 @@
 <template>
   <div>
     <blog-top class="blog_top"></blog-top>
-    <el-row>
-      <el-col span="6">
-        <Message class="message"></Message>
-      </el-col>
-      <el-col span="10" class="blog_mid">
-        <blog-menu></blog-menu>
-        <Article class="article"></Article>
-        <Article class="article"></Article>
-      </el-col>
-      <el-col span="6">
-       
-      </el-col>
-    </el-row>
+    <el-col span="6">
+      <Message></Message>
+    </el-col>
+    <el-col span="10" class="blog_mid">
+      <blog-menu></blog-menu>
+      <Article class="article"></Article>
+      <Article class="article"></Article>
+    </el-col>
+    <el-col span="6"></el-col>
     <blog-foot></blog-foot>
   </div>
 </template>
@@ -22,7 +18,7 @@
 <script>
 import BlogTop from "./blog/blog_top.vue";
 // 左侧信息栏
-import Message from "./blog/message.vue";
+import Message from './blog/message.vue';
 //导航栏
 import BlogMenu from "./blog/blog_menu.vue";
 import Article from "./blog/article.vue";
@@ -41,7 +37,7 @@ export default {
     BlogMenu,
     Article,
     // BlogRight
-    BlogFoot,
+    BlogFoot
   },
 };
 </script>
@@ -56,11 +52,7 @@ export default {
   width: 50%;
   margin: auto;
 }
-.article {
-  margin-top: 0.5rem;
-}
-.message{
-  width: 75%;
-  float: right;
+.article{
+  margin-top: .5rem;
 }
 </style>
